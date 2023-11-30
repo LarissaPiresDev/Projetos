@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="/StarbucksLadingPage.html/img/logo.png" class="logo"><img src="/StarbucksLadingPage.html/img/logo.png" alt="Logp Starbucks; Desenho de uma mulher (em branco) num fundo verde redondo; A imagem na logo da Starbucks é uma sereia de duas caudas."></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil nesciunt quaerat numquam maiores provident, ex in vitae ab temporibus ipsum voluptate quasi cumque sapiente error placeat! Numquam, rerum quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate accusamus perspiciatis vero aut fuga similique modi ipsa? Consectetur, corrupti dolor dolorem, exercitationem corporis cumque velit, beatae iusto dolorum provident fugiat.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="/StarbucksLadingPage.html/img/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <!-- Não consegui fazer as transiçôes de imagem (32 a 34) -->
+            <li><img src="/StarbucksLadingPage.html/img/thumb1.png" onclick="imgSlider('/StarbucksLadingPage.html/img/img1.png');changeCilcleColor('#017143')"></li>
+            <li><img src="/StarbucksLadingPage.html/img/thumb2.png" onclick="imgSlider('/StarbucksLadingPage.html/img/img2.png');changeCilcleColor('#eb7495')"></li>
+            <li><img src="/StarbucksLadingPage.html/img/thumb3.png" onclick="imgSlider('/StarbucksLadingPage.html/img/img3.png');changeCilcleColor('#d752b1')"></li>
+
+        </ul>
+        <ul class="sci">
+            <li><a href="/StarbucksLadingPage.html/img/facebook.png"><img src="/StarbucksLadingPage.html/img/facebook.png"></a></li>
+            <li><a href="/StarbucksLadingPage.html/img/instagram.png"><img src="/StarbucksLadingPage.html/img/instagram.png"></a></li>
+            <li><a href="/StarbucksLadingPage.html/img/twitter.png"><img src="/StarbucksLadingPage.html/img/twitter.png"></a></li>
+
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').scr = anything;
+        }
+
+        function changeCilcleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
+<!-- não consegui fazer a transição das imagens, perguntar como faz e o erro do cód -->
